@@ -17,7 +17,8 @@ It must have the following:<br/>
 6. Power supply of 5V for the onboard electronics.<br/>
 7. Odometer (optional)
  ## Control Modes
- ![block diagram](https://user-images.githubusercontent.com/25247909/50090665-4cfedb80-022f-11e9-97fb-bbfad6506444.png)
+ ![block diagram](https://user-images.githubusercontent.com/25247909/50090665-4cfedb80-022f-11e9-97fb-bbfad6506444.png)<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig 1: Block Diagram of the control modes
  ### Standby Mode:
 In this mode, the rover is stationary. All the motors are given BRAKE command. This condition is executed when:<br/>
 1. The goal position is reached<br/>
