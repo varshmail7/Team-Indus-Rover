@@ -1,6 +1,6 @@
-# Project Title
+# Control of autonomous survey rover
 
-Control of TeamIndus Rover
+An algorithm which 
 
 ## Objective of the Rover
 
@@ -14,31 +14,26 @@ The objective is to achieve both points (1) and (2) without accelerometer data.<
 ## Requirements of the Rover
 The rover shall have cognizance of its relative position from the starting point, at all times.<br/>
 It must have the following:<br/>
-1.Ultrasonic sensor (project specific) for detecting hazards.<br/>
-2.Gyroscope for tracking the heading of the robot.<br/>
-3.Ability to receive telecommand at the rate of 9 Bps or higher and transmit telemetry at the rate of 37 Bps or higher.<br/>
-4.On-Board Computer for data processing.<br/>
-5.Motor driver card to control motor speed.<br/>
-6.Power supply of 5V for the onboard electronics.<br/>
+1. Ultrasonic sensor (project specific) for detecting hazards.<br/>
+2. Gyroscope for tracking the heading of the robot.<br/>
+3. Ability to receive telecommand at the rate of 9 Bps or higher and transmit telemetry at the rate of 37 Bps or higher.<br/>
+4. On-Board Computer for data processing.<br/>
+5. Motor driver card to control motor speed.<br/>
+6. Power supply of 5V for the onboard electronics.<br/>
 
 ## Control Modes
 
 ![block diagram](https://user-images.githubusercontent.com/25247909/50090665-4cfedb80-022f-11e9-97fb-bbfad6506444.png)
-      
-      
-
-
-
 
 ### Standby Mode:
 In this mode, the rover is stationary. All the motors are given BRAKE command. This condition is executed when:<br/>
-1.The goal position is reached<br/>
-2.The kill switch is opened (due to emergency reasons)<br/>
+1. The goal position is reached<br/>
+2. The kill switch is opened (due to emergency reasons)<br/>
 
 ### Go-to-goal Mode:
 In this mode, the Rover shall orient itself toward the goal coordinates (the predetermined way point) and proceed in that direction using the information obtained from the IMU’s accelerometer and gyroscope. Before proceeding towards the waypoint the system will generate a failsafe timeout, using the following formula:<br/>
-timeout=(min. rover speed) * (displacement to goal)<br/>
-timeout=(min. rover speed) * (dtimeout=(min. rover speed) * (displacement to goal)<br/>
+* timeout = (min. rover speed) x (displacement to goal)<br/>
+* timeout = (min. rover speed) x (dtimeout=(min. rover speed) x (displacement to goal)<br/>
 
 
  ### Obstacle Avoidance Mode:
