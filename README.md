@@ -44,7 +44,7 @@ timeout=(min. rover speed) * (dtimeout=(min. rover speed) * (displacement to goa
  ### Obstacle Avoidance Mode:
 If any of the the Rover’s forward facing range sensors detect an object within a range of 35cm, the Rover will switch to this mode. It will identify the distance between itself and the nearest obstacle and proceed to take a point turn in the opposite direction until none of the range finders detect an obstacle within the 35 cm threshold. Then the Rover will move forward by a fixed distance (80 cm) and switch back to Go-to-Goal mode.
 
-## Mode Switching:
+## Mode Switching
 The Rover’s mode will switch from Standby to Go-to-goal mode at the beginning of the mission when provided a set of goal coordinates and commanded to START.<br/> 
 The mode will switch from Go-to-goal to Obstacle-avoidance mode when it detects an obstacle.<br/>
 The mode will switch from Obstacle-Avoidance to Go-to-goal mode when it is clear of the obstacle and Go-to-goal to Standby mode when the mission is complete.<br/>
