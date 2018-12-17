@@ -23,11 +23,11 @@ It must have the following:<br/>
 In this mode, the rover is stationary. All the motors are given BRAKE command. This condition is executed when:<br/>
 1. The goal position is reached<br/>
 2. The kill switch is opened (due to emergency reasons)<br/>
- ### Go-to-goal Mode:
+### Go-to-goal Mode:
 In this mode, the Rover shall orient itself toward the goal coordinates (the predetermined way point) and proceed in that direction using the information obtained from the IMU’s accelerometer and gyroscope. Before proceeding towards the waypoint the system will generate a failsafe timeout, using the following formula:<br/>
 * timeout = (min. rover speed) x (displacement to goal)<br/>
 * timeout = (min. rover speed) x (dtimeout=(min. rover speed) x (displacement to goal)<br/>
-  ### Obstacle Avoidance Mode:
+### Obstacle Avoidance Mode:
 If any of the the Rover’s forward facing range sensors detect an object within a range of 35cm, the Rover will switch to this mode. It will identify the distance between itself and the nearest obstacle and proceed to take a point turn in the opposite direction until none of the range finders detect an obstacle within the 35 cm threshold. Then the Rover will move forward by a fixed distance (80 cm) and switch back to Go-to-Goal mode.
  ## Mode Switching
 The Rover’s mode will switch from Standby to Go-to-goal mode at the beginning of the mission when provided a set of goal coordinates and commanded to START.<br/> 
