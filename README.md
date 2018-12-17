@@ -1,5 +1,5 @@
 # Control of Autonomous Survey Rover
- An algorithm which performs waypoint navigation and hazard avoidance without the use of accelerometer data.
+ An algorithm which performs waypoint navigation and hazard avoidance for a rover without the use of accelerometer data.
  ## Objective of the Rover
  To design and develop an autonomous lunar rover with hazard avoidance and way-point navigation. This rover shall traverse a minimum of 3048 cm through a set of predetermined way-points by avoiding obstacles more than 15 cm in height.
  ## Objective of the control algorithm
