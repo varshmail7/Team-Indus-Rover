@@ -1,6 +1,6 @@
-# Control of autonomous survey rover
+# Control of Autonomous Survey Rover
 
-An algorithm which 
+An algorithm which performs waypoint navigation and hazard avoidance without the use of accelerometer data.
 
 ## Objective of the Rover
 
@@ -20,6 +20,7 @@ It must have the following:<br/>
 4. On-Board Computer for data processing.<br/>
 5. Motor driver card to control motor speed.<br/>
 6. Power supply of 5V for the onboard electronics.<br/>
+7. Odometer (optional)
 
 ## Control Modes
 
