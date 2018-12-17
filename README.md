@@ -56,6 +56,6 @@ The goal point is specified in terms of x and y coordinates. The desired heading
 The distance between the goal coordinates and the current coordinates are measured to compute distance from the goal. The Rover then moves to cover this distance. If an obstacle is in its path, the rover switches to the obstacle avoidance mode. Finally, when it reaches the goal, it goes to standby mode and stops. <br/>
 
 ## Built With
-[Ardiuno IDE](https://www.arduino.cc/en/Guide/Environment)It connects to the Arduino and Genuino hardware to upload programs and communicate with them.
+* [Arduino IDE ](https://www.arduino.cc/en/Guide/Environment)It connects to the Arduino and Genuino hardware to upload programs and communicate with them.
 
 
